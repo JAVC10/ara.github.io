@@ -1,0 +1,194 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content:space-evenly;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    background-color: rgb(219, 226, 231);
+}
+
+.hijos{
+    border-radius: 10px;
+    width: 200px;
+    height: 60px;
+    background-color: rgb(82, 16, 88);
+    display: flex;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+}
+
+.otro{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #84b6f4;  
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: -220%;
+   transition: 2s;
+   flex-direction: column;
+}
+
+.bajar{
+    margin-top: 0;
+}
+
+.primero{
+    transition: 2s;
+    top: -220%;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: bisque;
+}
+
+
+.love {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    transform: rotate(45deg);
+    background: red;
+  }
+
+
+  .love:before,
+  .love:after {
+    content: "";
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background: red;
+  }  
+
+  .love {
+    width: 50px;
+    height: 50px;
+    transform: rotate(45deg);
+    background: red;
+    position: relative;
+  }
+  
+  .love:before,
+  .love:after {
+    content: "";
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background: red;
+    position: absolute;
+  }
+  
+  .love:before {
+    top: 0;
+    left: -25px;
+  }
+  
+  .love:after {
+    top: -25px;
+  }
+
+  .love {
+    width: 50px;
+    height: 50px;
+    transform: rotate(45deg);
+    background: red;
+    position: relative;
+    animation: beating 2s ease infinite;
+  }
+  
+  @keyframes beating {
+    0% {
+        transform: rotate(45deg) scale(1);
+    }
+    50% {
+      transform: rotate(45deg) scale(2);
+    }
+    100% {
+        transform: rotate(45deg) scale(1);
+    }
+  }
+
+ .corazon{
+    top: 0;
+ }
+
+
+.segundo{
+    transition: 2s;
+    top: -220%;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.img{
+    width: 80%;
+    height: 90%;
+    background: url(perro.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.abajo{
+    top: 0;
+}
+
+.triangulo{
+  width: 90%;
+  height: 200px;
+  background: url(triangulo.jpeg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  box-shadow: #fff 5px;
+  
+}
+
+
+.texto{
+  margin-top: 30px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.tercero{
+  background-color: purple;
+  transition: 2s;
+  top: -220%;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.piropo{
+  font-size: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.que{
+  top: 0;
+}
